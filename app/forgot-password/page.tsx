@@ -44,7 +44,7 @@ export default function ForgotPasswordPage() {
                 <BookOpen className="w-6 h-6 text-white" />
               </div>
               <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                LearnPath
+                Masterly
               </span>
             </div>
           </div>
@@ -102,7 +102,7 @@ export default function ForgotPasswordPage() {
               <BookOpen className="w-6 h-6 text-white" />
             </div>
             <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              LearnPath
+              Masterly
             </span>
           </div>
           <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">Forgot your password?</h1>

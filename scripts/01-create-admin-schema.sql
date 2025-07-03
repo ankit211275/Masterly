@@ -80,7 +80,7 @@ CREATE TABLE IF NOT EXISTS user_progress (
 
 -- Insert sample admin user (password: admin123)
 INSERT INTO admins (email, password_hash, name, role) VALUES 
-('admin@learnpath.com', '$2b$10$rOzJqQqQqQqQqQqQqQqQqO', 'Admin User', 'super_admin')
+('admin@Masterly.com', '$2b$10$rOzJqQqQqQqQqQqQqQqQqO', 'Admin User', 'super_admin')
 ON CONFLICT (email) DO NOTHING;
 
 -- Create indexes for better performance

@@ -110,7 +110,7 @@ export function AdminSidebar() {
           </div>
           <div>
             <span className="text-lg font-bold text-gray-900 dark:text-white">Admin Portal</span>
-            <p className="text-xs text-gray-500 dark:text-gray-400">LearnPath Management</p>
+            <p className="text-xs text-gray-500 dark:text-gray-400">Masterly Management</p>
           </div>
         </div>
       </SidebarHeader>

@@ -90,7 +90,7 @@ export default function LandingPage() {
               <BookOpen className="w-5 h-5 text-white" />
             </div>
             <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              LearnPath
+              Masterly
             </span>
           </div>
           <nav className="hidden md:flex items-center space-x-8">
@@ -253,7 +253,7 @@ export default function LandingPage() {
       <section id="features" className="py-20 px-4 bg-white dark:bg-gray-800">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <Badge className="mb-4 bg-purple-100 text-purple-700 hover:bg-purple-100">✨ Why Choose LearnPath</Badge>
+            <Badge className="mb-4 bg-purple-100 text-purple-700 hover:bg-purple-100">✨ Why Choose Masterly</Badge>
             <h2 className="text-4xl font-bold mb-4">Personalized Learning Experience</h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               Our AI-driven platform adapts to your learning style and pace, ensuring optimal knowledge retention
@@ -440,7 +440,7 @@ export default function LandingPage() {
                 <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
                   <BookOpen className="w-5 h-5 text-white" />
                 </div>
-                <span className="text-xl font-bold">LearnPath</span>
+                <span className="text-xl font-bold">Masterly</span>
               </div>
               <p className="text-gray-400">Empowering learners worldwide with personalized education technology.</p>
             </div>
@@ -521,7 +521,7 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 LearnPath. All rights reserved.</p>
+            <p>&copy; 2024 Masterly. All rights reserved.</p>
           </div>
         </div>
       </footer>

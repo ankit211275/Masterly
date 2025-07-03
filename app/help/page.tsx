@@ -148,7 +148,7 @@ export default function HelpPage() {
               <CardContent className="p-6 text-center">
                 <BookOpen className="w-8 h-8 mx-auto mb-3 text-blue-600" />
                 <h3 className="font-semibold mb-2 text-gray-900 dark:text-white">User Guide</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">Complete guide to using LearnPath</p>
+                <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">Complete guide to using Masterly</p>
                 <Button variant="outline" size="sm">
                   <ExternalLink className="w-4 h-4 mr-2" />
                   View Guide
@@ -313,7 +313,7 @@ export default function HelpPage() {
               <CardContent className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <Mail className="w-4 h-4 text-blue-600" />
-                  <span className="text-gray-900 dark:text-white">support@learnpath.com</span>
+                  <span className="text-gray-900 dark:text-white">support@Masterly.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-4 h-4 text-green-600" />
