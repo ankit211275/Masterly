@@ -196,6 +196,7 @@ router.get("/:slug", optionalAuth, async (req, res) => {
 // @desc    Enroll in a course
 // @access  Private
 router.post("/:id/enroll", authenticateToken, async (req, res) => {
+  console.log("👉 Enroll route hit with:", req.method, req.originalUrl)
   try {
     const courseId = req.params.id
     const userId = req.user.id

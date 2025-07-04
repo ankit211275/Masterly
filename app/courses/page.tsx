@@ -256,9 +256,7 @@ export default function CoursesPage() {
                     )}
                   </div>
 
-                  {course.comingSoon ? (
-                    <Button disabled className="bg-gray-400">Coming Soon</Button>
-                  ) : course.isEnrolled ? (
+                  {course.userEnrollment?.enrolled || course.isEnrolled ? (
                     <Link href={`/courses/${course.slug}`}>
                       <Button className="bg-green-600 hover:bg-green-700">
                         <Play className="w-4 h-4 mr-2" />

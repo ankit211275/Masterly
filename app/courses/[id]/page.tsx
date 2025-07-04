@@ -354,28 +354,6 @@ export default function CourseDetailPage({ params }: { params: { id: string } })
             </CardHeader>
           </Card>
 
-          {/* Enrollment Action */}
-          {!course.userEnrollment?.enrolled && (
-            <Card className="dark:bg-gray-800/80 dark:border-gray-700">
-              <CardContent className="p-6 text-center">
-                <h3 className="text-lg font-semibold mb-2">Ready to start learning?</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  Enroll now to access all course content and track your progress.
-                </p>
-                <Button onClick={handleEnroll} disabled={enrolling} className="bg-blue-600 hover:bg-blue-700">
-                  {enrolling ? (
-                    <>
-                      <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                      Enrolling...
-                    </>
-                  ) : (
-                    "Enroll Now"
-                  )}
-                </Button>
-              </CardContent>
-            </Card>
-          )}
-
           {/* Course Content */}
           <div className="space-y-4">
             <div className="flex items-center justify-between">

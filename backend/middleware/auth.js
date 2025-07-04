@@ -79,17 +79,26 @@ const authenticateToken = async (req, res, next) => {
 }
 
 
-function optionalAuth(req, res, next) {
-  const authHeader = req.headers.authorization
-  if (authHeader) {
+const optionalAuth = async (req, res, next) => {
+  try {
+    const authHeader = req.headers.authorization
+    if (!authHeader) return next()
+
     const token = authHeader.split(" ")[1]
-    jwt.verify(token, process.env.JWT_SECRET, (err, user) => {
-      if (!err) {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET || "fallback-secret")
+
+    if (decoded?.userId) {
+      const user = await User.findById(decoded.userId).select("-password")
+      if (user && user.isActive) {
         req.user = user
       }
-    })
+    }
+
+    return next()
+  } catch (err) {
+    console.warn("optionalAuth token invalid:", err.message)
+    return next() // Don't block if token fails
   }
-  next()
 }
 
 
